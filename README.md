@@ -15,8 +15,15 @@ O site foi desenvolvido com HTML, CSS e JavaScript puros, oferecendo informaçõ
 
 ## 🌐 Hospedagem
 
-O site está disponível via [GitHub Pages](https://SEU_USUARIO.github.io/NOME_DO_REPO/)
+O site está disponível [Aqui](https://sitenovo.cedoa.com.br/)
 
 ## 🔒 Segurança
 
 Este projeto não contém dados sensíveis nem conexões com APIs externas. Apenas conteúdo estático é publicado.
+
+## ⚠️ Direitos Autorais
+
+Este projeto é de propriedade da empresa **CEDOA - Centro Oftalmológico da Amazônia**.  
+Todos os direitos são reservados.  
+É proibida a cópia, redistribuição ou modificação deste conteúdo sem autorização expressa.
+
