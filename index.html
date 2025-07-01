@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/LogoSemFundo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>CEDOA</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <div class="header">
+        <img src="Images/LogoSemFundo.png" alt="Logo" class="logo">
+        <h1 class="title">Centro de Diagnóstico Oftalmológico da Amazônia</h1>
+    </div> 
+    
+
+    <!-- Menu de Navegação -->
+    <div class="cfg-option">
+        <nav class="nav">
+            <button class="hamburger"></button>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#equipamentos" class="option">Equipamentos</a></li>
+                <li><a href="#equipe" class="option">Equipe Médica</a></li>
+                <li><a href="" class="option">Exames</a></li>
+                <li><a href="" class="option">Cirugias</a></li>
+                <li><a href="#convênios" class="option">Convênios</a></li>
+                <li><a href="#contato" class="option">Contato</a></li>
+                <button class="button-numero" style="border: none;"><a href="https://api.whatsapp.com/send?phone=559284530507&text=Oi!%20Estava%20no%20site%20e%20quero%20agendar%20uma%20consulta%20%F0%9F%98%8A" target="_blank" class="numero" style="color: #103440">Whatssapp</a></button>
+            </ul>
+        </nav>    
+     </div>
+    
+    
+
+
+     <!-- Boas-vindas -->
+    <div class="cfg-welcome">
+        <section class="welcome-section">
+            <h1 class="cfg-welcome-title" style="margin-top: 0px;">BEM-VINDO <h1 class="cfg-welcome-title" style="margin-top: 0px;">AO CEDOA</h1></h1>
+            <a href="#novidades" class="novidades-btn" onclick="openModal('modalNovidades')">Novidades</a>
+            <p class="cfg-welcome-text" >Seja bem vindo à página de informações da Clínica Oftalmológica CEDOA, fundada em 1993, em Manaus/AM.</p>
+        </section>    
+    </div>
+
+    <div class="modal" id="modalNovidades">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modalNovidades')">&times;</span>
+          <h2>Novidades</h2>
+          <p>Bem-vindo às novidades do CEDOA. Aqui você encontrará informações sobre atualizações, eventos e muito mais.</p>
+          <div class="slider">
+            <div class="slides">
+              <div class="slide">
+                <p class="slide-p">Nova Aquisição: ARGOS® - Biômetro de Última Geração!
+                    Mais precisão, rapidez e tecnologia avançada para exames oftalmológicos.</p>
+                <img src="Images/Novidades/destaqueargos.jpg" alt="">
+              </div>
+              <div class="slide">Novidades em Breve</div>
+              <div class="slide" >Novidades em Breve</div>
+            </div>
+            <button class="prev" onclick="mudarSlide(-1)">❮</button>
+            <button class="next" onclick="mudarSlide(1)">❯</button>
+            <div class="indicators">
+              <span onclick="irParaSlide(0)"></span>
+              <span onclick="irParaSlide(1)"></span>
+              <span onclick="irParaSlide(2)"></span>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+
+        
+    <!-- Estrutura -->
+    <div class="section">
+        <div class="section-content">
+            <img src="Images/estrutura2.JPG" alt="Estrutura" class="section-image">
+            <div class="section-text">
+                <h1>Estrutura</h1>
+                <p>O CEDOA conta com uma estrutura moderna, segura e confortável, planejada para a realização de consultas, exames e procedimentos oftalmológicos. Seguindo padrões internacionais de qualidade e utilizando tecnologia de ponta, o centro prioriza o bem-estar e a segurança dos pacientes em cada etapa do atendimento.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Equipamentos -->
+    <div class="section">
+        <div class="section-content equipamentos">
+            <div class="section-text">
+                <h1>Ambiente Acolhedor</h1>
+                <p>O CEDOA oferece um ambiente cuidadosamente planejado para proporcionar conforto, tranquilidade e bem-estar. Cada espaço foi pensado para transmitir acolhimento e segurança, tornando a experiência dos pacientes mais leve, agradável e humanizada desde a chegada até o atendimento final.</p>
+            </div>
+            <img src="Images/retina.jpg" alt="Equipamentos" class="section-image">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-content">
+            <img src="Images/aparelho.jpg" alt="Estrutura" class="section-image">
+            <div class="section-text">
+                <h1>Especialidades</h1>
+                <p>O CEDOA oferece atendimento completo em diversas subespecialidades da oftalmologia, com foco na precisão do diagnóstico e na personalização do tratamento. Nosso corpo clínico está preparado para lidar com as mais variadas condições visuais, desde quadros simples até casos mais complexos, sempre com tecnologia de ponta e atenção humanizada.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Equipamentos Oftalmológicos Interativos -->
+<div class="equipamentos-fotos" style="margin: 40px 0;">
+  <h2 style="text-align:center; color:#103440; font-size: 36px;" id="equipamentos">Conheça nossos Equipamentos</h2>
+  <div class="equipamentos-galeria">
+    <div class="equipamento-item" onclick="falarDescricao('OCT: Tomógrafo de coerência óptica, usado para exames detalhados da retina.')">
+      <img src="Images/Equipamentos/Tomey EM 4000/exame-microscopia-especular-da-cornea-neooftalmo.jpg" alt="Tomey EM 4000">
+      <p>Tomey EM 4000</p>
+    </div>
+    <div class="equipamento-item" onclick="falarDescricao('Retinógrafo: Equipamento para fotografar o fundo do olho.')">
+      <img src="Images/Equipamentos/Biometro Alcon Argos/alcon-argos1.jpg" alt="Biometro Alcon Argos">
+      <p>Biometro Alcon Argos</p>
+    </div>
+    <div class="equipamento-item" onclick="falarDescricao('Campímetro: Avalia o campo visual do paciente.')">
+      <img src="Images/Equipamentos/4-Sight Accutome/4sight-001-1619198633860.png" alt="4-Sight Accutome">
+      <p>4-Sight Accutome</p>
+    </div>
+    <div class="equipamento-item" onclick="falarDescricao('Biômetro: Mede o comprimento do olho para cirurgias de catarata.')">
+      <img src="Images/Equipamentos/Ocuscan Paquimetria/OcuScan.jpg" alt="Paquimetria Ocuscan">
+      <p>Paquimetria Ocuscan</p>
+    </div>
+    <div class="equipamento-item" onclick="falarDescricao('Tonomêtro: Mede a pressão intraocular.')">
+      <img src="Images/Equipamentos/Zeis Atlas 9000/Zeiss-Atlas-9000.jpg" alt="Tonomêtro">
+      <p>Zeis Atlas 9000</p>
+    </div>
+  </div>
+</div>
+    
+
+
+    <!-- Equipe Médica -->
+    <div class="team" id="equipe">
+        <h1 class="team-title">Equipe Médica</h1>
+        <p class="team-subtitle"></p>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="Images/Medicos/arnaldorusso.jpg" alt="Dr. Arnaldo Russo">
+                <h3>Dr. Arnaldo Russo</h3>
+                <p>Cirurgia Refrativa e Catarata<br>CRMAM-1083</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Medicos/thiagorusso.jpg" alt="Dr. Thiago Russo">
+                <h3>Dr. Thiago Russo</h3>
+                <p>Catarata, Retina (clínica e cirúrgica) e Uveítes<br>CRMAM-6222</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Medicos/ricardorusso.jpg" alt="Dr. Ricardo Russo">
+                <h3>Dr. Ricardo Russo</h3>
+                <p>Cirurgia de Catarata<br>CRMAM-2789</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Medicos/dineiarusso.jpg" alt="Dra. Dinéia Russo">
+                <h3>Dra. Dinéia Russo</h3>
+                <p>Oftalmologia Clínica e Pediátrica<br>CRMAM-1968</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Logo grande.jpg" alt="Dr. Alexia Caldas">
+                <h3>Dr. Alexia Caldas</h3>
+                <p>Oftalmologista<br>CRMAM-10248</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Logo grande.jpg" alt="Dra. Cristina Freire">
+                <h3>Dra. Cristina Freire</h3>
+                <p>Oftalmologista<br>CRMAM-8298</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Medicos/emilydias.jpg" alt="Dra. Cristina Freire">
+                <h3>Dra. Emily Dias</h3>
+                <p>Oftalmologista<br>CRMAM-6949</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Medicos/eugeniorocha.jpg" alt="Dra. Cristina Freire">
+                <h3>Dr. Eugênio Rocha</h3>
+                <p>Oftalmologista<br>CRMAM-510</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Medicos/felipemargem.jpg" alt="Dra. Cristina Freire">
+                <h3>Dr. Felipe Margem</h3>
+                <p>Oftalmologista<br>CRMAM-5306</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Logo grande.jpg" alt="Dra. Cristina Freire">
+                <h3>Dra. Luciana Bacelar</h3>
+                <p>Oftalmologista<br>CRMAM-7887</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Medicos/omarbonilla.jpg" alt="Dra. Cristina Freire">
+                <h3>Dr. Omar Bonilla</h3>
+                <p>Oftalmologista<br>CRMAM-2233</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Logo grande.jpg" alt="Dra. Cristina Freire">
+                <h3>Dra. Roniely Oliveira</h3>
+                <p>Oftalmologista<br>CRMAM-8131</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/vagner2.jpg" alt="Dr. Vagner Menegardo">
+                <h3>Dr. Vagner Menegardo</h3>
+                <p>Oftalmologista<br>CRMAM-8900</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Logo grande.jpg" alt="Dra. Cristina Freire">
+                <h3>Dr. Yuri Oliveira</h3>
+                <p>Oftalmologista<br>CRMAM-9985</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Convênios -->
+
+    <div class="carousel-container" id="convênios">
+        <h1 class="carousel-title">Convênios Atendidos</h1>
+        <p class="carousel-subtitle">Oferecemos uma ampla variedade dos melhores convênios disponíveis.</p>
+        <div class="carousel">
+            <button class="carousel-btn prev-btn">&#10094;</button>
+            <div class="carousel-track">
+                <img src="Images/Convenio/Evida.png" alt="Convênio 1" class="carousel-image">
+                <img src="Images/Convenio/AFFEAM.png" alt="Convênio 2" class="carousel-image">
+                <img src="Images/Convenio/AMBEP.png" alt="Convênio 3" class="carousel-image">
+                <img src="Images/Convenio/amil.png" alt="Convênio 4" class="carousel-image">
+                <img src="Images/Convenio/BradescoSaude.png" alt="Convênio 5" class="carousel-image">
+                <img src="Images/Convenio/CanaaFuneraria.jpeg" alt="Convênio 6" class="carousel-image">
+                <img src="Images/Convenio/CasfSaude.jpeg" alt="Convênio 7" class="carousel-image">
+                <img src="Images/Convenio/CASSI.png" alt="Convênio 8" class="carousel-image">
+                <img src="Images/Convenio/FundaçãoAssefaz.jpeg" alt="Convênio 9" class="carousel-image">
+                <img src="Images/Convenio/GEAP.png" alt="Convênio 10" class="carousel-image">
+                <img src="Images/Convenio/HOSPITAL_ADVENTISTA.jpg" alt="Convênio 11" class="carousel-image">
+                <img src="Images/Convenio/logo-caam.jpeg" alt="Convênio 12" class="carousel-image">
+                <img src="Images/Convenio/logo-saude-caixa.jpg" alt="Convênio 13" class="carousel-image">
+                <img src="Images/Convenio/logo-sulamerica.png" alt="Convênio 14" class="carousel-image">
+                <img src="Images/Convenio/midservice.jpg" alt="Convênio 15" class="carousel-image">
+                <img src="Images/Convenio/PostalSaude.png" alt="Convênio 16" class="carousel-image">
+                <img src="Images/Convenio/SaudePetrobras.png" alt="Convênio 17" class="carousel-image">
+                <img src="Images/Convenio/SRB.jpeg" alt="Convênio 18" class="carousel-image">
+                <img src="Images/Convenio/TREAM.jpg" alt="Convênio 19" class="carousel-image">
+                <img src="Images/Convenio/unimed.png" alt="Convênio 20" class="carousel-image">
+            </div>
+            <button class="carousel-btn next-btn">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Contato -->
+    <div class="contact" id="contato" >
+    
+        <h1 class="contact-title">Canais de Atendimento</h1>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <p>(92) 3212-6000</p>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <p>(92) 98453-0507 </p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>contato@cedoa.com.br</p>
+            </div>
+
+        </div>
+        <div class="contact-map">
+            <iframe src="https://storage.googleapis.com/maps-solutions-u06hlqa88a/locator-plus/8eib/locator-plus.html"
+                width="100%" height="480"
+                style="border:0;"
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+   
+
+    <!-- Rodapé --> 
+    <footer class="footer-cedoa" id = "rodape">
+        <div class="container-footer">
+          
+          <div class="footer-col">
+            <img src="Images/LogoSemFundo.png" alt="Logo CEDOA" class="logo-footer">
+            
+            <p>O CEDOA é referência em atendimento oftalmológico de excelência, com tecnologia de ponta e cuidado humanizado em Manaus.</p>
+
+            <button class="button-sistema" onclick="openModal('modalSistemas')">
+                <span><i class="fas fa-cogs" > </i>Sistemas CEDOA</span>
+            </button>
+
+          </div>
+
+          <div class="modal" id="modalSistemas">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modalSistemas')">&times;</span>
+              <h2>Sistemas CEDOA</h2>
+              <p>Bem-vindo aos sistemas internos do CEDOA. Aqui você poderá acessar funcionalidades administrativas e técnicas.</p>
+              <div class="access-buttons">
+              
+        
+                <!-- TomTicket -->
+                <a href="https://cedoa.tomticket.com" target="_blank" class="access-item">
+                  <div class="icon-circle"><img src="Images/Icon/helpdesk.ico" alt="HelpDesk" class="custom-icon"></div>
+                  <p>HelpDesk</p>
+                </a>
+        
+                <!-- Webmail -->
+                <a href="https://webmail.kinghost.com.br/" target="_blank" class="access-item">
+                  <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                  <p>Webmail</p>
+                </a>
+
+                <!-- BotConversa -->
+                <a href="https://app.botconversa.com.br/" target="_blank" class="access-item">
+                  <div class="icon-circle"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.12695 19.6669C3.12695 13.4845 8.13877 8.47266 14.3212 8.47266H22.8054C28.9878 8.47266 33.9996 13.4845 33.9996 19.6669C33.9996 25.8493 28.9878 30.8611 22.8054 30.8611H14.3212C8.13878 30.8611 3.12695 25.8493 3.12695 19.6669Z" fill="#3868C7"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3.13856 -0.0009767C4.87194 -0.000976775 6.27713 1.40421 6.27713 3.13759L6.27713 19.6674L3.13856 19.6674L8.5973e-07 19.6674L1.67678e-07 3.13759C9.19094e-08 1.40421 1.40518 -0.000976624 3.13856 -0.0009767Z" fill="#76C451"></path><path d="M17.7917 19.6659C17.7917 21.3993 16.4016 22.8045 14.6868 22.8045C12.9721 22.8045 11.582 21.3993 11.582 19.6659C11.582 17.9325 12.9721 16.5273 14.6868 16.5273C16.4016 16.5273 17.7917 17.9325 17.7917 19.6659Z" fill="white"></path><path d="M27.6215 19.6659C27.6215 21.3993 26.2314 22.8045 24.5167 22.8045C22.8019 22.8045 21.4118 21.3993 21.4118 19.6659C21.4118 17.9325 22.8019 16.5273 24.5167 16.5273C26.2314 16.5273 27.6215 17.9325 27.6215 19.6659Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M0 19.6677C0 11.7542 6.41105 5.33496 14.3244 5.33496H16.0067C17.7401 5.33496 19.1452 6.74014 19.1452 8.47352C19.1452 10.2069 17.7401 11.6121 16.0067 11.6121H14.3244C9.88223 11.6121 6.27713 15.2165 6.27713 19.6677C6.27713 24.119 9.88223 27.7234 14.3244 27.7234H22.4581C24.1915 27.7234 25.5967 29.1286 25.5967 30.8619C25.5967 32.5953 24.1915 34.0005 22.4581 34.0005H14.3244C6.41105 34.0005 0 27.5813 0 19.6677Z" fill="#76C451"></path></svg></i></div>
+                  <p>BotConversa</p>
+                </a>
+              </div>
+
+              
+
+              
+        
+              <p class="access-note">* Acessos restrito aos Funcionarios do CEDOA </p>
+            </div>
+          </div>
+      
+          <div class="footer-col">
+            <h3>Acesso Rápido</h3>
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#equipamentos">Equipamentos</a></li>
+              <li><a href="#equipe">Equipe Médica</a></li>
+              <li><a href="#">Exames</a></li>
+              <li><a href="#">Cirugias</a></li>
+              <li><a href="#convênios">Convênios</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-col">
+            <h3>Redes Sociais</h3>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/cedoamanaus/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://web.facebook.com/cedoa.am/"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <h3>Atendimento</h3>
+            <p>Seg - Sex: 07:00 às 18:00<br>Sáb: 07:00 às 12:00</p>
+            
+          </div>
+      
+        </div>
+      </footer>
+
+      
+    
+    <a href="https://api.whatsapp.com/send?phone=559284530507&text=Ol%C3%A1,%20Vim%20pelo%20Site%20queria%20agendar%20uma%20consulta" target="_blank">
+      <button class="fixed-button" id="agendarConsulta">Agendar Consulta</button>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
