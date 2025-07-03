@@ -17,10 +17,6 @@ O site foi desenvolvido com HTML, CSS e JavaScript puros, oferecendo informaçõ
 
 O site está disponível [Aqui](https://sitenovo.cedoa.com.br/)
 
-## 🔒 Segurança
-
-Este projeto não contém dados sensíveis nem conexões com APIs externas. Apenas conteúdo estático é publicado.
-
 ## ⚠️ Direitos Autorais
 
 Este projeto é de propriedade da empresa **CEDOA - Centro Oftalmológico da Amazônia**.  
