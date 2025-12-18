@@ -15,7 +15,7 @@ O site foi desenvolvido com HTML, CSS e JavaScript puros, oferecendo informaçõ
 
 ## 🌐 Hospedagem
 
-O site está disponível [Aqui](https://sitenovo.cedoa.com.br/)
+O site está disponível [Aqui](https://cedoa.com.br/)
 
 ## ⚠️ Direitos Autorais
 
