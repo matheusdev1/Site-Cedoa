@@ -23,10 +23,11 @@
         <nav class="nav">
             <button class="hamburger"></button>
             <ul class="nav-list" id="nav-list">
-                <li><a href="#equipamentos" class="option">Equipamentos</a></li>
                 <li><a href="#equipe" class="option">Equipe Médica</a></li>
-                <li><a href="" class="option">Exames</a></li>
-                <li><a href="" class="option">Cirugias</a></li>
+                <li><a href="#equipamentos" class="option">Equipamentos</a></li>
+                <li><a href="#exames" class="option">Exames</a></li>
+                <li><a href="#cirurgias" class="option">Cirurgias</a></li>
+                <li><a href="#especialidades" class="option">Especialidades</a></li>
                 <li><a href="#convênios" class="option">Convênios</a></li>
                 <li><a href="#contato" class="option">Contato</a></li>
                 <button class="button-numero" style="border: none;"><a href="https://api.whatsapp.com/send?phone=559284530507&text=Oi!%20Estava%20no%20site%20e%20quero%20agendar%20uma%20consulta%20%F0%9F%98%8A" target="_blank" class="numero" style="color: #103440">WhatsApp</a></button>
@@ -41,101 +42,53 @@
     <div class="cfg-welcome">
         <section class="welcome-section">
             <h1 class="cfg-welcome-title" style="margin-top: 0px;">BEM-VINDO <h1 class="cfg-welcome-title" style="margin-top: 0px;">AO CEDOA</h1></h1>
-            <a href="#novidades" class="novidades-btn" onclick="openModal('modalNovidades')">Novidades</a>
             <p class="cfg-welcome-text" >Seja bem vindo à página de informações da Clínica Oftalmológica CEDOA, fundada em 1993, em Manaus/AM.</p>
         </section>    
     </div>
 
-    <div class="modal" id="modalNovidades">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal('modalNovidades')">&times;</span>
-          <h2>Novidades</h2>
-          <p>Bem-vindo às novidades do CEDOA. Aqui você encontrará informações sobre atualizações, eventos e muito mais.</p>
-          <div class="slider">
-            <div class="slides">
-              <div class="slide">
-                <p class="slide-p">Nova Aquisição: ARGOS® - Biômetro de Última Geração!
-                    Mais precisão, rapidez e tecnologia avançada para exames oftalmológicos.</p>
-                <img src="Images/Novidades/destaqueargos.jpg" alt="">
+
+
+
+        
+ <!-- Estrutura -->
+<div class="section">
+    <div class="section-content equipamentos">
+        <div class="carrossel-imagens">
+            <button class="carrossel-btn esquerda" onclick="mudarImagemEstrutura(-1)">&#10094;</button>
+            <img id="imagemCarrosselEstrutura" src="Images/Ambientes/estrutura2.jpg" alt="Estrutura" class="section-image-carrossel">
+            <button class="carrossel-btn direita" onclick="mudarImagemEstrutura(1)">&#10095;</button>
+        </div>
+        <div class="section-text">
+            <h1>Estrutura</h1>
+            <p>O CEDOA conta com uma estrutura moderna, segura e confortável, planejada para a realização de consultas, exames e procedimentos oftalmológicos. Seguindo padrões internacionais de qualidade e utilizando tecnologia de ponta, o centro prioriza o bem-estar e a segurança dos pacientes em cada etapa do atendimento.</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Ambiente Acolhedor -->
+    <div class="section">
+          <div class="section-content equipamentos">
+              <div class="section-text">
+                  <h1>Ambiente Acolhedor</h1>
+                  <p>O CEDOA oferece um ambiente cuidadosamente planejado para proporcionar conforto, tranquilidade e bem-estar. Cada espaço foi pensado para transmitir acolhimento e segurança, tornando a experiência dos pacientes mais leve, agradável e humanizada desde a chegada até o atendimento final.</p>
               </div>
-              <div class="slide">Novidades em Breve</div>
-              <div class="slide" >Novidades em Breve</div>
-            </div>
-            <button class="prev" onclick="mudarSlide(-1)">❮</button>
-            <button class="next" onclick="mudarSlide(1)">❯</button>
-            <div class="indicators">
-              <span onclick="irParaSlide(0)"></span>
-              <span onclick="irParaSlide(1)"></span>
-              <span onclick="irParaSlide(2)"></span>
-            </div>
+                <div class="carrossel-imagens">
+                    <button class="carrossel-btn esquerda" onclick="mudarImagem(-1)">&#10094;</button>
+                    <img id="imagemCarrossel" src="Images/Ambientes/retina.jpg" alt="Ambiente" class="section-image-carrossel">
+                    <button class="carrossel-btn direita" onclick="mudarImagem(1)">&#10095;</button>
+                </div>
           </div>
-        
-        </div>
-      </div>
-
-
-        
-    <!-- Estrutura -->
-    <div class="section">
-        <div class="section-content">
-            <img src="Images/estrutura2.JPG" alt="Estrutura" class="section-image">
-            <div class="section-text">
-                <h1>Estrutura</h1>
-                <p>O CEDOA conta com uma estrutura moderna, segura e confortável, planejada para a realização de consultas, exames e procedimentos oftalmológicos. Seguindo padrões internacionais de qualidade e utilizando tecnologia de ponta, o centro prioriza o bem-estar e a segurança dos pacientes em cada etapa do atendimento.</p>
-            </div>
-        </div>
     </div>
 
-    <!-- Equipamentos -->
-    <div class="section">
-        <div class="section-content equipamentos">
-            <div class="section-text">
-                <h1>Ambiente Acolhedor</h1>
-                <p>O CEDOA oferece um ambiente cuidadosamente planejado para proporcionar conforto, tranquilidade e bem-estar. Cada espaço foi pensado para transmitir acolhimento e segurança, tornando a experiência dos pacientes mais leve, agradável e humanizada desde a chegada até o atendimento final.</p>
-            </div>
-            <img src="Images/retina.jpg" alt="Equipamentos" class="section-image">
-        </div>
-    </div>
-
-    <div class="section">
+    <!-- <div class="section">
         <div class="section-content">
             <img src="Images/aparelho.jpg" alt="Estrutura" class="section-image">
             <div class="section-text">
                 <h1>Especialidades</h1>
-                <p>O CEDOA oferece atendimento completo em diversas subespecialidades da oftalmologia, com foco na precisão do diagnóstico e na personalização do tratamento. Nosso corpo clínico está preparado para lidar com as mais variadas condições visuais, desde quadros simples até casos mais complexos, sempre com tecnologia de ponta e atenção humanizada.</p>
+                <p>O CEDOA oferece atendimento completo em todas as subespecialidades da oftalmologia, com foco na precisão do diagnóstico e na personalização do tratamento. Nosso corpo clínico está preparado para lidar com as mais variadas condições visuais, desde quadros simples até casos mais complexos, sempre com tecnologia de ponta e atenção humanizada.</p>
             </div>
         </div>
     </div>
-
-    <!-- Equipamentos Oftalmológicos Interativos -->
-<div class="equipamentos-fotos" style="margin: 40px 0;">
-  <h2 style="text-align:center; color:#103440; font-size: 36px;" id="equipamentos">Conheça nossos Equipamentos</h2>
-  <div class="equipamentos-galeria">
-    <div class="equipamento-item" onclick="falarDescricao('OCT: Tomógrafo de coerência óptica, usado para exames detalhados da retina.')">
-      <img src="Images/Equipamentos/Tomey EM 4000/exame-microscopia-especular-da-cornea-neooftalmo.jpg" alt="Tomey EM 4000">
-      <p>Tomey EM 4000</p>
-    </div>
-    <div class="equipamento-item" onclick="falarDescricao('Retinógrafo: Equipamento para fotografar o fundo do olho.')">
-      <img src="Images/Equipamentos/Biometro Alcon Argos/alcon-argos1.jpg" alt="Biometro Alcon Argos">
-      <p>Biometro Alcon Argos</p>
-    </div>
-    <div class="equipamento-item" onclick="falarDescricao('Campímetro: Avalia o campo visual do paciente.')">
-      <img src="Images/Equipamentos/4-Sight Accutome/4sight-001-1619198633860.png" alt="4-Sight Accutome">
-      <p>4-Sight Accutome</p>
-    </div>
-    <div class="equipamento-item" onclick="falarDescricao('Biômetro: Mede o comprimento do olho para cirurgias de catarata.')">
-      <img src="Images/Equipamentos/Ocuscan Paquimetria/OcuScan.jpg" alt="Paquimetria Ocuscan">
-      <p>Paquimetria Ocuscan</p>
-    </div>
-    <div class="equipamento-item" onclick="falarDescricao('Tonomêtro: Mede a pressão intraocular.')">
-      <img src="Images/Equipamentos/Zeis Atlas 9000/Zeiss-Atlas-9000.jpg" alt="Tonomêtro">
-      <p>Zeis Atlas 9000</p>
-    </div>
-  </div>
-</div>
-    
-
-
     <!-- Equipe Médica -->
     <div class="team" id="equipe">
         <h1 class="team-title">Equipe Médica</h1>
@@ -147,7 +100,7 @@
                 <p>Cirurgia Refrativa e Catarata<br>CRMAM-1083</p>
             </div>
             <div class="team-member">
-                <img src="Images/Medicos/thiagorusso.jpg" alt="Dr. Thiago Russo">
+                <img src="Images/Medicos/Thiago Russo .webp" alt="Dr. Thiago Russo">
                 <h3>Dr. Thiago Russo</h3>
                 <p>Catarata, Retina (clínica e cirúrgica) e Uveítes<br>CRMAM-6222</p>
             </div>
@@ -162,57 +115,235 @@
                 <p>Oftalmologia Clínica e Pediátrica<br>CRMAM-1968</p>
             </div>
             <div class="team-member">
-                <img src="Images/Logo grande.jpg" alt="Dr. Alexia Caldas">
+                <img src="Images/Medicos/Alexia.jpeg" alt="Dr. Alexia Caldas">
                 <h3>Dr. Alexia Caldas</h3>
-                <p>Oftalmologista<br>CRMAM-10248</p>
+                <p>Oftalmologista Pediatra <br> Cirurgias de Estrabismo <br>CRMAM-10248</p>
             </div>
             <div class="team-member">
-                <img src="Images/Logo grande.jpg" alt="Dra. Cristina Freire">
+                <img src="Images/Medicos/cristina.jpg" alt="Dra. Cristina Freire">
                 <h3>Dra. Cristina Freire</h3>
-                <p>Oftalmologista<br>CRMAM-8298</p>
+                <p>Oftalmologista especialista em Retina<br>CRMAM-8298</p>
             </div>
             <div class="team-member">
-                <img src="Images/Medicos/emilydias.jpg" alt="Dra. Cristina Freire">
+                <img src="Images/Medicos/Emily Dias.PNG " alt="Dra. Emily Dias">
                 <h3>Dra. Emily Dias</h3>
-                <p>Oftalmologista<br>CRMAM-6949</p>
+                <p>Oftalmologista <br> Plástica Ocular <br>CRMAM-6949</p>
             </div>
             <div class="team-member">
-                <img src="Images/Medicos/eugeniorocha.jpg" alt="Dra. Cristina Freire">
+                <img src="Images/Medicos/eugeniorocha.jpg" alt="Dr. Eugênio Rocha">
                 <h3>Dr. Eugênio Rocha</h3>
-                <p>Oftalmologista<br>CRMAM-510</p>
+                <p>Oftalmologia Clínica <br>CRMAM-510</p>
             </div>
             <div class="team-member">
-                <img src="Images/Medicos/felipemargem.jpg" alt="Dra. Cristina Freire">
+                <img src="Images/Medicos/felipemargem.jpg" alt="Dr. Felipe Margem">
                 <h3>Dr. Felipe Margem</h3>
-                <p>Oftalmologista<br>CRMAM-5306</p>
+                <p>Oftalmologista <br>Cirurgias de Catarata<br>CRMAM-5306</p>
             </div>
             <div class="team-member">
-                <img src="Images/Logo grande.jpg" alt="Dra. Cristina Freire">
+                <img src="Images/Medicos/Luciana.jpg" alt="Dra. Luciana Bacelar">
                 <h3>Dra. Luciana Bacelar</h3>
-                <p>Oftalmologista<br>CRMAM-7887</p>
+                <p>Oftalmologia Clínica<br>CRMAM-7887</p>
             </div>
             <div class="team-member">
-                <img src="Images/Medicos/omarbonilla.jpg" alt="Dra. Cristina Freire">
+                <img src="Images/Medicos/omarbonilla.jpg" alt="Dr. Omar Bonilla">
                 <h3>Dr. Omar Bonilla</h3>
-                <p>Oftalmologista<br>CRMAM-2233</p>
+                <p>Oftalmologia Clínica<br>CRMAM-2233</p>
             </div>
             <div class="team-member">
-                <img src="Images/Logo grande.jpg" alt="Dra. Cristina Freire">
-                <h3>Dra. Roniely Oliveira</h3>
-                <p>Oftalmologista<br>CRMAM-8131</p>
-            </div>
-            <div class="team-member">
-                <img src="Images/vagner2.jpg" alt="Dr. Vagner Menegardo">
+                <img src="Images/Medicos/vagner2.jpg" alt="Dr. Vagner Menegardo">
                 <h3>Dr. Vagner Menegardo</h3>
-                <p>Oftalmologista<br>CRMAM-8900</p>
+                <p>Oftalmologia Clínica<br>CRMAM-8900</p>
             </div>
             <div class="team-member">
-                <img src="Images/Logo grande.jpg" alt="Dra. Cristina Freire">
+                <img src="Images/Medicos/Yuri.jpg" alt="Dr. Yuri Oliveira">
                 <h3>Dr. Yuri Oliveira</h3>
-                <p>Oftalmologista<br>CRMAM-9985</p>
+                <p>Oftalmologia Clínica<br>CRMAM-9985</p>
             </div>
         </div>
     </div>
+
+    <!-- Equipamentos Oftalmológicos Interativos -->
+<div class="equipamentos-fotos" style="margin: 40px 0;">
+  <h2 style="text-align:center; color:#103440; font-size: 36px;" id="equipamentos">Conheça nossos Equipamentos</h2>
+  <div class="equipamentos-galeria">
+    <div class="equipamento-item">
+  <div class="equipamento-card">
+    <div class="equipamento-front">
+      <img src="Images/Equipamentos/Tomey EM 4000/exame-microscopia-especular-da-cornea-neooftalmo.jpg" alt="Tomey EM 4000">
+      <p>Tomey EM 4000</p>
+    </div>
+    <div class="equipamento-back">
+      <p><span style="font-size: 24px;"></span> Equipamento que realiza topografia e microscopia especular da córnea, auxiliando no diagnóstico e no planejamento de cirurgias oculares.</p>
+    </div>
+  </div>
+</div>
+    <div class="equipamento-item">
+  <div class="equipamento-card">
+    <div class="equipamento-front">
+      <img src="Images/Equipamentos/Biometro Alcon Argos/alcon-argos1.jpg" alt="Biometro Alcon Argos">
+      <p>Biometro Alcon Argos</p>
+    </div>
+    <div class="equipamento-back">
+      <p><span style="font-size: 22px;"></span> <br> Equipamento de biometria óptica de alta precisão que mede as dimensões do olho, auxiliando no cálculo de lentes intraoculares e no planejamento de cirurgias de catarata.</p>
+    </div>
+  </div>
+</div>
+    <div class="equipamento-item">
+  <div class="equipamento-card">
+    <div class="equipamento-front">
+      <img src="Images/Equipamentos/4-Sight Accutome/4sight-001-1619198633860.png" alt="4-Sight Accutome">
+      <p>4-Sight Accutome</p>
+    </div>
+    <div class="equipamento-back">
+      <p><span style="font-size: 24px;"></span> Equipamento multifuncional que realiza biometria, paquimetria, microscopia especular e ultrassonografia ocular, auxiliando no diagnóstico e planejamento cirúrgico.</p>
+    </div>
+  </div>
+</div>
+
+    <div class="equipamento-item">
+  <div class="equipamento-card">
+    <div class="equipamento-front">
+      <img src="Images/Equipamentos/Zeis Atlas 9000/Zeiss-Atlas-9000.jpg" alt="Zeis Atlas 9000">
+      <p>Zeiss Atlas 9000</p>
+    </div>
+    <div class="equipamento-back">
+      <p><span style="font-size: 24px;"></span>  Equipamento de topografia corneana que analisa a forma e curvatura da córnea, auxiliando no diagnóstico de doenças oculares e no planejamento de cirurgias refrativas.</p>
+    </div>
+  </div>
+</div>
+<div class="equipamento-item">
+  <div class="equipamento-card">
+    <div class="equipamento-front">
+      <img src="Images/Equipamentos/visulasyag.jpg" alt="Visulas Yag III">
+      <p>Visulas Yag III</p>
+    </div>
+    <div class="equipamento-back">
+      <p><span style="font-size: 24px;"></span>  Equipamento a laser utilizado em procedimentos oftalmológicos, como capsulotomia e iridotomia, proporcionando precisão e segurança no tratamento de alterações oculares.</p>
+    </div>
+  </div>
+</div>
+<div class="equipamento-item">
+  <div class="equipamento-card">
+    <div class="equipamento-front">
+      <img src="Images/Equipamentos/cx-1-video-overview.jpg" alt="Retinógrafo Canon CX-1">
+      <p>Retinógrafo Canon CX-1</p>
+    </div>
+    <div class="equipamento-back">
+      <p><span style="font-size: 24px;"></span>  Equipamento de imagem ocular que captura fotografias da retina em alta resolução, auxiliando no diagnóstico e acompanhamento de doenças retinianas.</p>
+    </div>
+  </div>
+</div>
+<div class="equipamento-item">
+  <div class="equipamento-card">
+    <div class="equipamento-front">
+      <img src="Images/Equipamentos/oct.jpg" alt="3D OCT-1 Maestro 2">
+      <p>3D OCT-1 Maestro 2</p>
+    </div>
+    <div class="equipamento-back">
+      <p><span style="font-size: 24px;"></span>  Equipamento de tomografia óptica que realiza imagens 3D de alta definição da retina, auxiliando no diagnóstico e acompanhamento de doenças oculares.</p>
+    </div>
+  </div>
+</div>
+<div class="equipamento-item">
+  <div class="equipamento-card">
+    <div class="equipamento-front">
+      <img src="Images/Equipamentos/laser.jpg" alt="LightLas">
+      <p>LightLas</p>
+    </div>
+    <div class="equipamento-back">
+      <p><span style="font-size: 24px;"></span>  Equipamento de fotocoagulação a laser utilizado em tratamentos retinianos, oferecendo precisão e segurança nos procedimentos para diversas condições oculares.</p>
+    </div>
+  </div>
+</div>
+<div class="equipamento-item">
+  <div class="equipamento-card">
+    <div class="equipamento-front">
+      <img src="Images/Equipamentos/campimetrosemfundo.png" alt="Zeiss Humphrey Matrix 800">
+      <p>Zeiss Humphrey Matrix 800</p>
+    </div>
+    <div class="equipamento-back">
+      <p><span style="font-size: 24px;"></span>Equipamento utilizado para analisar detalhadamente o campo visual do paciente, permitindo identificar alterações na visão periférica e central. Essencial no diagnóstico e monitoramento de diversas doenças oculares, oferece precisão e confiabilidade na avaliação da função visual.</p>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+  </div>
+</div>
+    <!-- Exames -->
+<div class="section" id="exames">
+  <div class="section-content">
+    <div class="section-text">
+      <h1><i class="fas fa-microscope" style="color:#1b576b; margin-right:10px;"></i>Exames</h1>
+      <p>Realizamos exames oftalmológicos completos com tecnologia avançada e equipe especializada:</p>
+      <ul class="section-list-horizontal">
+        <li><i class="fas fa-check-circle"></i>Acuidade Visual</li>
+        <li><i class="fas fa-check-circle"></i>Angiofluoresceinografia</li>
+        <li><i class="fas fa-check-circle"></i>Biometria Ultrassônica</li>
+        <li><i class="fas fa-check-circle"></i>Campimetria</li>
+        <li><i class="fas fa-check-circle"></i>Check-Up para Glaucoma</li>
+        <li><i class="fas fa-check-circle"></i>Fundoscopia</li>
+        <li><i class="fas fa-check-circle"></i>Fotocoagulação</li>
+        <li><i class="fas fa-check-circle"></i>Gonioscopia</li>
+        <li><i class="fas fa-check-circle"></i>Mapeamento de Retina</li>
+        <li><i class="fas fa-check-circle"></i>Microscopia Especular</li>
+        <li><i class="fas fa-check-circle"></i>OCT</li>
+        <li><i class="fas fa-check-circle"></i>Paquimetria</li>
+        <li><i class="fas fa-check-circle"></i>Retinografia</li>
+        <li><i class="fas fa-check-circle"></i>Tonometria</li>
+        <li><i class="fas fa-check-circle"></i>Topografia Corneana</li>
+        <li><i class="fas fa-check-circle"></i>Ultrassonografia Diagnóstica</li>
+        <li><i class="fas fa-check-circle"></i>Yag Laser</li>        
+      </ul>
+    </div>
+    <!-- <img src="" alt="" class="section-image"> -->
+  </div>
+</div>
+
+<!-- Cirurgias -->
+<div class="section" id="cirurgias">
+  <div class="section-content reverse">
+    <img src="Images/Equipamentos/foto centro.jpg" alt="" class="section-image" style="margin-top: 50px;">
+    <div class="section-text">
+      <h1><i class="fas fa-user-md" style="color:#1b576b; margin-right:10px;"></i>Cirurgias</h1>
+      <p>Contamos com estrutura moderna para cirurgias oftalmológicas seguras e eficazes:</p>
+      <ul class="section-list-horizontal">
+        <li><i class="fas fa-check-circle"></i>Facoemulsificação - Cirurgia de Catarata</li>
+        <li><i class="fas fa-check-circle"></i>Crosslinkg - Ceratocone</li>
+        <li><i class="fas fa-check-circle"></i>Excimer Laser - Cirurgia Refrativa</li>
+        <li><i class="fas fa-check-circle"></i>Pterígio</li>
+        <li><i class="fas fa-check-circle"></i>Descolamento de Retina</li>
+        <li><i class="fas fa-check-circle"></i>Estrabismo</li>
+        <li><i class="fas fa-check-circle"></i>Injeção intravitrea</li>
+        <li><i class="fas fa-check-circle"></i>Vitrectomia</li>
+        <li><i class="fas fa-check-circle"></i>Plástica ocular</li>
+        <li><i class="fas fa-check-circle"></i>Trabeculectomia - Cirurgia de glaucoma</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Especialidades -->
+<div class="section" id="especialidades">
+  <div class="section-content">
+    <div class="section-text">
+      <h1><i class="fas fa-eye" style="color:#1b576b; margin-right:10px;"></i>Especialidades</h1>
+      <p>Equipe multidisciplinar com especialistas em todas as áreas da oftalmologia:</p>
+      <ul class="section-list-horizontal">
+        <li><i class="fas fa-check-circle"></i>Retina e Vítreo</li>
+        <li><i class="fas fa-check-circle"></i>Catarata</li>
+        <li><i class="fas fa-check-circle"></i>Glaucoma</li>
+        <li><i class="fas fa-check-circle"></i>Oftalmopediatria</li>
+        <li><i class="fas fa-check-circle"></i>Plástica Ocular</li>
+        <li><i class="fas fa-check-circle"></i>Uveítes</li>
+        <li><i class="fas fa-check-circle"></i>Clínica Oftalmológica</li>
+        <li><i class="fas fa-check-circle"></i>Cirugia Refrativa</li>
+        <li><i class="fas fa-check-circle"></i>Estrabismo</li>
+      </ul>
+    </div>
+    <!-- <img src=""  alt="" class="section-image"> -->
+  </div>
+</div>
 
 
     <!-- Convênios -->
@@ -233,7 +364,7 @@
                 <img src="Images/Convenio/CASSI.png" alt="Convênio 8" class="carousel-image">
                 <img src="Images/Convenio/FundaçãoAssefaz.jpeg" alt="Convênio 9" class="carousel-image">
                 <img src="Images/Convenio/GEAP.png" alt="Convênio 10" class="carousel-image">
-                <img src="Images/Convenio/HOSPITAL_ADVENTISTA.jpg" alt="Convênio 11" class="carousel-image">
+                <img src="Images/Convenio/proasa.jpg" alt="Convênio 11" class="carousel-image">
                 <img src="Images/Convenio/logo-caam.jpeg" alt="Convênio 12" class="carousel-image">
                 <img src="Images/Convenio/logo-saude-caixa.jpg" alt="Convênio 13" class="carousel-image">
                 <img src="Images/Convenio/logo-sulamerica.png" alt="Convênio 14" class="carousel-image">
@@ -243,6 +374,7 @@
                 <img src="Images/Convenio/SRB.jpeg" alt="Convênio 18" class="carousel-image">
                 <img src="Images/Convenio/TREAM.jpg" alt="Convênio 19" class="carousel-image">
                 <img src="Images/Convenio/unimed.png" alt="Convênio 20" class="carousel-image">
+                <img src="Images/Convenio/proasasaude.png" alt="Convênio 21" class="carousel-image">
             </div>
             <button class="carousel-btn next-btn">&#10095;</button>
         </div>
@@ -265,18 +397,40 @@
                 <i class="fas fa-envelope"></i>
                 <p>contato@cedoa.com.br</p>
             </div>
+            
+            <!-- Endereços CEDOA -->
+            <div class="enderecos-cedoa">
+              <h2 style="color:#103440; text-align:center; margin: 30px 0 10px;">Nossas Unidades</h2>
+              <div class="enderecos-list">
+                <!-- Unidade 1 -->
+                <div class="endereco-item">
+                  <div class="endereco-info">
+                    <h3>CEDOA - Matriz</h3>
+                    <p>Rua Rio Mar, 474 - Vieiralves, Manaus/AM</p>
 
-        </div>
-        <div class="contact-map">
-            <iframe src="https://storage.googleapis.com/maps-solutions-u06hlqa88a/locator-plus/8eib/locator-plus.html"
-                width="100%" height="480"
-                style="border:0;"
-                loading="lazy">
-            </iframe>
-        </div>
-    </div>
-   
-
+                  </div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.958815921552!2d-60.022158289108724!3d-3.1055939968569177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c055383ef2def%3A0xf41490e2166b58a9!2sCEDOA!5e0!3m2!1spt-BR!2sbr!4v1756126694835!5m2!1spt-BR!2sbr" frameborder="0" style="border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <!-- Unidade 2 -->
+                <div class="endereco-item">
+                  <div class="endereco-info">
+                    <h3>CEDOA - Cidade Nova</h3>
+                    <p>Rua Beijar-Flor, 39 - Cidade Nova, Manaus/AM</p>
+                  </div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31874.682102416395!2d-60.00115906831914!3d-3.004154199328344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25922e869a01353f%3A0xef4b42d243cc37e5!2sCedoa%20Cidade%20Nova!5e0!3m2!1spt-BR!2sbr!4v1756127074699!5m2!1spt-BR!2sbr" frameborder="0" style="border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <!-- Unidade 3 -->
+                <div class="endereco-item">
+                  <div class="endereco-info">
+                    <h3>CEDOA - Nova Cidade</h3>
+                    <p>Av. Margarita, 1359 - Nova Cidade, Manaus/AM</p>
+                  </div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.3352620807996!2d-59.983086089108966!3d-3.0041543969592097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c19a824c13e15%3A0x6cd856bc8b79ab6e!2sCEDOA%20-%20Nova%20Cidade!5e0!3m2!1spt-BR!2sbr!4v1756126994522!5m2!1spt-BR!2sbr" frameborder="0" style="border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>      
     <!-- Rodapé --> 
     <footer class="footer-cedoa" id = "rodape">
         <div class="container-footer">
@@ -331,10 +485,11 @@
             <h3>Acesso Rápido</h3>
             <ul>
               <li><a href="#">Início</a></li>
-              <li><a href="#equipamentos">Equipamentos</a></li>
               <li><a href="#equipe">Equipe Médica</a></li>
-              <li><a href="#">Exames</a></li>
-              <li><a href="#">Cirugias</a></li>
+              <li><a href="#equipamentos">Equipamentos</a></li>
+              <li><a href="#exames">Exames</a></li>
+              <li><a href="#cirurgias">Cirurgias</a></li>
+              <li><a href="#especialidades">Especialidades</a></li>
               <li><a href="#convênios">Convênios</a></li>
               <li><a href="#contato">Contato</a></li>
             </ul>
@@ -356,7 +511,7 @@
 
       
     
-    <a href="https://api.whatsapp.com/send?phone=559284530507&text=Ol%C3%A1,%20Vim%20pelo%20Site%20queria%20agendar%20uma%20consulta" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=559284530507&text=Oi!%20Estava%20no%20site%20e%20quero%20agendar%20uma%20consulta%20%F0%9F%98%8A" target="_blank">
       <button class="fixed-button" id="agendarConsulta">Agendar Consulta</button>
     </a>
 
